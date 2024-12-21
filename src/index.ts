@@ -15,7 +15,7 @@ declare module "@fehujs/http-server" {
 }
 
 Response.prototype.generateCsrfToken = function (request: Request) {
-    const session_id = request.cookieHandler.getCookie(CONFIG.modules.sessions.ID_COOKIE_NAME)
+    const session_id = request.cookieHandler.getCookie(CONFIG.ID_COOKIE_NAME)
     return generateToken(session_id)
 }
 
@@ -24,12 +24,12 @@ Response.prototype.setCsrfCookie = function (httpContext: HttpContext, token: st
 }
 
 Response.prototype.setCsrfHeader = function ({ response }: HttpContext, token: string) {
-    response.setHeader(CONFIG.modules.csrfShield.TOKEN_HEADER_NAME, token)
+    response.setHeader(CONFIG.TOKEN_HEADER_NAME, token)
     return response
 }
 
 Response.prototype.csrfHTMLInput = function (token: string) {
-    return `<input name="${CONFIG.modules.csrfShield.TOKEN_BODY_NAME}" type="hidden" value="${token}" />`
+    return `<input name="${CONFIG.TOKEN_BODY_NAME}" type="hidden" value="${token}" />`
 }
 
 type CsrfShieldConfig = {

@@ -6,16 +6,16 @@ import { CONFIG } from "./config"
 
 
 export function generateToken(sessionId: string) {
-    return createHmac('sha256', CONFIG.SECRET_KEY).update(sessionId).digest('hex')
+    return createHmac('sha256', CONFIG.secret_key).update(sessionId).digest('hex')
 }
 
 export function setCsrfCookie({ request, response }: HttpContext, token: string): Response {
     return request.cookieHandler.setCookie(response, {
-        name: CONFIG.modules.csrfShield.TOKEN_COOKIE_NAME,
+        name: CONFIG.TOKEN_COOKIE_NAME,
         value: token,
         secure: true,
         sameSite: "Strict",
         httpOnly: true,
-        maxAge: CONFIG.modules.csrfShield.TOKEN_COOKIE_EXPIRES
+        maxAge: CONFIG.TOKEN_COOKIE_EXPIRES
     })
 }
