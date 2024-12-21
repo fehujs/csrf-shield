@@ -1,0 +1,46 @@
+{
+  "name": "@fehujs/csrf-shield",
+  "version": "0.1.0",
+  "description": "CSRF protection",
+  "main": "build/index.js",
+  "type": "module",
+  "files": [
+    "./build/**/*",
+    "README.md",
+    "LICENCE"
+  ],
+  "exports": {
+    ".": "./build/index.js"
+  },
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "build:types": "tsc -d --declarationDir build --declarationMap --emitDeclarationOnly",
+    "release": "pnpm build && pnpm build:types",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fehujs/csrf-shield.git"
+  },
+  "keywords": [
+    "csrf",
+    "shield"
+  ],
+  "author": "Pascal LLEONART",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fehujs/csrf-shield/issues"
+  },
+  "homepage": "https://github.com/fehujs/csrf-shield#readme",
+  "devDependencies": {
+    "@fehujs/build": "^0.1.1",
+    "@fehujs/tsconfig": "^1.0.0",
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@fehujs/http-server": "^0.1.2",
+    "@fehujs/sessions": "^0.1.0",
+    "dotenv": "^16.4.7"
+  }
+}
