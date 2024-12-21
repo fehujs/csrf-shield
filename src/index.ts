@@ -1,11 +1,9 @@
-import { Request, Response, types as FHSTypes } from "@fehujs/http-server"
+import { HttpContext, Request, Response } from "@fehujs/http-server"
 
 import { CONFIG } from "./config"
 import { generateToken, setCsrfCookie } from "./helpers"
 import { CsrfMiddleware } from "./middleware"
 
-
-type HttpContext = FHSTypes.HttpContext
 
 declare module "@fehujs/http-server" {
     interface Response {

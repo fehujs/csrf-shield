@@ -1,11 +1,8 @@
-import { Middleware, types } from "@fehujs/http-server"
+import { HttpContext, Middleware } from "@fehujs/http-server"
 import { getSessionId } from "@fehujs/sessions"
 
 import { CONFIG } from "./config"
 import { generateToken } from "./helpers"
-
-
-type HttpContext = types.HttpContext
 
 
 export class CsrfMiddleware extends Middleware {
