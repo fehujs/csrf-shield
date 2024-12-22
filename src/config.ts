@@ -19,8 +19,8 @@ if (!conf.parsed["SECRET_KEY"]) {
 
 let _config
 try {
-    const configPath = pathToFileURL(join(cwd(), "config", "csrf-shield.js")).href
-    _config = (await import(configPath))
+    const configPath = pathToFileURL(join(cwd(), "src", "config", "csrf-shield.js")).href
+    _config = (await import(configPath)).default
 } catch (e: any) {
     console.log(`[csrf-token] config: config file not found, applying default config.`, e)
     _config = {

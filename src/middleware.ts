@@ -8,11 +8,11 @@ import { generateToken } from "./helpers"
 export class CsrfMiddleware extends Middleware {
     public async handle(httpContext: HttpContext): Promise<HttpContext> {
         const sessionId = getSessionId(httpContext.request)
-        const reqCookieToken = httpContext.request.cookieHandler.getCookie(CONFIG.modules.csrfShield.TOKEN_COOKIE_NAME)
+        const reqCookieToken = httpContext.request.cookieHandler.getCookie(CONFIG.TOKEN_COOKIE_NAME)
 
         /** the second token could be in the body or in a header */
-        const reqBodyToken = httpContext.request.body[CONFIG.modules.csrfShield.TOKEN_BODY_NAME]
-            ?? httpContext.request.headers[CONFIG.modules.csrfShield.TOKEN_HEADER_NAME]
+        const reqBodyToken = httpContext.request.body[CONFIG.TOKEN_BODY_NAME]
+            ?? httpContext.request.headers[CONFIG.TOKEN_HEADER_NAME]
 
         if (!reqBodyToken || !reqCookieToken) return this.formatOutputHttpContext(httpContext)
 

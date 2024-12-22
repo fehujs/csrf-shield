@@ -1,4 +1,5 @@
 import { HttpContext, Request, Response } from "@fehujs/http-server"
+import { getSessionId } from "@fehujs/sessions"
 
 import { CONFIG } from "./config"
 import { generateToken, setCsrfCookie } from "./helpers"
@@ -15,7 +16,7 @@ declare module "@fehujs/http-server" {
 }
 
 Response.prototype.generateCsrfToken = function (request: Request) {
-    const session_id = request.cookieHandler.getCookie(CONFIG.ID_COOKIE_NAME)
+    const session_id = getSessionId(request)
     return generateToken(session_id)
 }
 
@@ -40,6 +41,7 @@ type CsrfShieldConfig = {
 }
 
 export {
+    CONFIG,
     CsrfMiddleware,
     CsrfShieldConfig,
     generateToken,
