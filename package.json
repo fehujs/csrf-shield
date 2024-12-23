@@ -1,6 +1,6 @@
 {
   "name": "@fehujs/csrf-shield",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "CSRF protection",
   "main": "build/index.js",
   "type": "module",
@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/fehujs/csrf-shield#readme",
   "devDependencies": {
-    "@fehujs/build": "^0.1.1",
+    "@fehujs/build": "^0.2.0",
     "@fehujs/tsconfig": "^1.0.0",
     "@types/node": "^22.10.2",
     "typescript": "^5.7.2"
