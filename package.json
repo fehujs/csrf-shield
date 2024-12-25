@@ -1,6 +1,6 @@
 {
   "name": "@fehujs/csrf-shield",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "CSRF protection",
   "main": "build/index.js",
   "type": "module",
@@ -39,8 +39,8 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@fehujs/http-server": "^0.1.4",
-    "@fehujs/sessions": "^0.1.5",
+    "@fehujs/http-server": "^0.1.6",
+    "@fehujs/sessions": "^0.1.6",
     "dotenv": "^16.4.7"
   }
 }

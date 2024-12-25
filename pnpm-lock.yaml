@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@fehujs/http-server':
-        specifier: ^0.1.4
-        version: 0.1.4
+        specifier: ^0.1.6
+        version: 0.1.6
       '@fehujs/sessions':
-        specifier: ^0.1.5
-        version: 0.1.5
+        specifier: ^0.1.6
+        version: 0.1.6
       dotenv:
         specifier: ^16.4.7
         version: 16.4.7
@@ -186,17 +186,17 @@ packages:
   '@fehujs/build@0.2.0':
     resolution: {integrity: sha512-5eRH3gmjOvRm7FpKgF+UAehxSSbQ60fP2fwuAqY3fzOJIbg9cPbe7pTMi4dX2POYaQyFPdTTznYvxn5IJyjNxg==}
 
-  '@fehujs/helpers@0.1.1':
-    resolution: {integrity: sha512-0IMsTTiULhiEqUF4sxT0GcHWkwAZV7AO2X5S3DCXs097YBKxQ6rcPjfDfZaiFXnmhFPGyaOj+/TQrtFjzReVDw==}
+  '@fehujs/helpers@0.1.2':
+    resolution: {integrity: sha512-s6O/NKUuxjK7JP8igrODmZssQLeybp/kY2vgxregvKAzdpEBscYQQ5nWCBHRzESmxrJNK2K93dMUvDrprOsU3A==}
 
-  '@fehujs/http-server@0.1.4':
-    resolution: {integrity: sha512-MndBo6YEGCivYDQS1vE415J5Ud37dJyk/LkBD7adW2IvD+tjRM8cb44XRGDyNGMiO3ZIg0vPT9CRArsEcIR6Gw==}
+  '@fehujs/http-server@0.1.6':
+    resolution: {integrity: sha512-ufJyl1pdyeQ/EGzdtxrSHfcL+HaMC8DFixFt1K2BHva4xxv+vMwYDIKfYCULoUZpxcgcxabc9cShUUU7JnKJ4g==}
 
-  '@fehujs/ioc@1.0.3':
-    resolution: {integrity: sha512-ntduBK2ciX6w/DSBrnxpdkK+icgVaBOM17Q089nfAcnGZdRWH9sufoAD8l3Rgdi3VXarBmAiKNrZTRZEvUrMZA==}
+  '@fehujs/ioc@1.0.6':
+    resolution: {integrity: sha512-ZUdyuzK6/5vhTarY5qR8/+nLbgL3ucFS+rPuZBOYZFSmOmKah6zVlJo+1xssKypWwyzXkJ9GmCriGR1d0Pbttg==}
 
-  '@fehujs/sessions@0.1.5':
-    resolution: {integrity: sha512-CKBY+TCveECXr+Xltosx1ZsglMcdoz/Elmm2udpn5OAF8y2gbVL+L1sbvxU1pvbi7cnM5ez8EvE1MQKvb+vCHw==}
+  '@fehujs/sessions@0.1.6':
+    resolution: {integrity: sha512-7C4mKYlZJPEfSJ1Zq/psr6yf0sI709FZP24AT5Dubr+cFZlq4cg5YOTnfwRS2QrDfgRLNqcHBbZFru8jXWtwuw==}
 
   '@fehujs/template-parser@1.0.1':
     resolution: {integrity: sha512-vLxFiVixh7WUOv0hOj6alTUOQ4HA2otRWQNMbZidaSKCz+X/38SnnOvRns2p/WCNnApgtvHGExa4zi0p57WETw==}
@@ -334,25 +334,25 @@ snapshots:
     dependencies:
       esbuild: 0.24.2
 
-  '@fehujs/helpers@0.1.1':
+  '@fehujs/helpers@0.1.2':
     dependencies:
       '@paralleldrive/cuid2': 2.2.2
 
-  '@fehujs/http-server@0.1.4':
+  '@fehujs/http-server@0.1.6':
     dependencies:
-      '@fehujs/helpers': 0.1.1
-      '@fehujs/ioc': 1.0.3
+      '@fehujs/helpers': 0.1.2
+      '@fehujs/ioc': 1.0.6
       '@fehujs/template-parser': 1.0.1
       dotenv: 16.4.7
       formidable: 3.5.2
 
-  '@fehujs/ioc@1.0.3':
+  '@fehujs/ioc@1.0.6':
     dependencies:
       reflect-metadata: 0.2.2
 
-  '@fehujs/sessions@0.1.5':
+  '@fehujs/sessions@0.1.6':
     dependencies:
-      '@fehujs/http-server': 0.1.4
+      '@fehujs/http-server': 0.1.6
 
   '@fehujs/template-parser@1.0.1': {}
 
