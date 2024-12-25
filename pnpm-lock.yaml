@@ -12,8 +12,8 @@ importers:
         specifier: ^0.1.4
         version: 0.1.4
       '@fehujs/sessions':
-        specifier: ^0.1.4
-        version: 0.1.4
+        specifier: ^0.1.5
+        version: 0.1.5
       dotenv:
         specifier: ^16.4.7
         version: 16.4.7
@@ -195,8 +195,8 @@ packages:
   '@fehujs/ioc@1.0.3':
     resolution: {integrity: sha512-ntduBK2ciX6w/DSBrnxpdkK+icgVaBOM17Q089nfAcnGZdRWH9sufoAD8l3Rgdi3VXarBmAiKNrZTRZEvUrMZA==}
 
-  '@fehujs/sessions@0.1.4':
-    resolution: {integrity: sha512-jAxHZ73B0puOQWi2dCh2MbXIgMF0nJ8LLGy6KF9nw2tx5MVdHpARAD3zTaE3nTVpyHBxCal4tFTjtMZHgTZzqg==}
+  '@fehujs/sessions@0.1.5':
+    resolution: {integrity: sha512-CKBY+TCveECXr+Xltosx1ZsglMcdoz/Elmm2udpn5OAF8y2gbVL+L1sbvxU1pvbi7cnM5ez8EvE1MQKvb+vCHw==}
 
   '@fehujs/template-parser@1.0.1':
     resolution: {integrity: sha512-vLxFiVixh7WUOv0hOj6alTUOQ4HA2otRWQNMbZidaSKCz+X/38SnnOvRns2p/WCNnApgtvHGExa4zi0p57WETw==}
@@ -350,7 +350,7 @@ snapshots:
     dependencies:
       reflect-metadata: 0.2.2
 
-  '@fehujs/sessions@0.1.4':
+  '@fehujs/sessions@0.1.5':
     dependencies:
       '@fehujs/http-server': 0.1.4
 
