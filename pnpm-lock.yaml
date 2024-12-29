@@ -9,18 +9,18 @@ importers:
   .:
     dependencies:
       '@fehujs/http-server':
-        specifier: ^0.1.6
-        version: 0.1.6
+        specifier: ^0.1.9
+        version: 0.1.9
       '@fehujs/sessions':
-        specifier: ^0.1.6
-        version: 0.1.6
+        specifier: ^0.1.7
+        version: 0.1.7
       dotenv:
         specifier: ^16.4.7
         version: 16.4.7
     devDependencies:
       '@fehujs/build':
-        specifier: ^0.2.0
-        version: 0.2.0
+        specifier: ^0.2.1
+        version: 0.2.1
       '@fehujs/tsconfig':
         specifier: ^1.0.0
         version: 1.0.0
@@ -183,23 +183,23 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fehujs/build@0.2.0':
-    resolution: {integrity: sha512-5eRH3gmjOvRm7FpKgF+UAehxSSbQ60fP2fwuAqY3fzOJIbg9cPbe7pTMi4dX2POYaQyFPdTTznYvxn5IJyjNxg==}
+  '@fehujs/build@0.2.1':
+    resolution: {integrity: sha512-tlqes8moI+mhitCVkaHcZKo4AU5+xW9B9IuN4m/sAhGxiomszXOPtHI8T7NSYbIPZcBY+aP9lMbziIOzlQKVdg==}
 
-  '@fehujs/helpers@0.1.2':
-    resolution: {integrity: sha512-s6O/NKUuxjK7JP8igrODmZssQLeybp/kY2vgxregvKAzdpEBscYQQ5nWCBHRzESmxrJNK2K93dMUvDrprOsU3A==}
+  '@fehujs/helpers@0.1.3':
+    resolution: {integrity: sha512-6kbs2mV6xhcPbSSmDSRKFI5Dz2fASqhy8QMEhcn65+xToLqK2kfKU181GJQRECvPSenH2NwkVECBBZ19ofN43Q==}
 
-  '@fehujs/http-server@0.1.6':
-    resolution: {integrity: sha512-ufJyl1pdyeQ/EGzdtxrSHfcL+HaMC8DFixFt1K2BHva4xxv+vMwYDIKfYCULoUZpxcgcxabc9cShUUU7JnKJ4g==}
+  '@fehujs/http-server@0.1.9':
+    resolution: {integrity: sha512-TCGw/VkITFRfl5T5jvvBMV1BvqroMZy+Hhv093TG6JK83nrZSADfGZOek1HZPnhWPC4/7uptjxFK7EOY7jOoJw==}
 
-  '@fehujs/ioc@1.0.6':
-    resolution: {integrity: sha512-ZUdyuzK6/5vhTarY5qR8/+nLbgL3ucFS+rPuZBOYZFSmOmKah6zVlJo+1xssKypWwyzXkJ9GmCriGR1d0Pbttg==}
+  '@fehujs/ioc@1.0.7':
+    resolution: {integrity: sha512-ZQeHE4QoVqwtn5q+Ar87k0S7+bZf+1SO8iX6t+t58erFEj3G+Q2ST3mt7V8xNRwDJdvOyxga/xm3k1dS1jlj5A==}
 
-  '@fehujs/sessions@0.1.6':
-    resolution: {integrity: sha512-7C4mKYlZJPEfSJ1Zq/psr6yf0sI709FZP24AT5Dubr+cFZlq4cg5YOTnfwRS2QrDfgRLNqcHBbZFru8jXWtwuw==}
+  '@fehujs/sessions@0.1.7':
+    resolution: {integrity: sha512-oi1Xtk1WiwssJ28o/WOnpneZHyY1aSncQnsoNwnAlJTdtBC3idW2I1r3oUdh8cgAFWowrk0tFsH3VCkXjEEeDQ==}
 
-  '@fehujs/template-parser@1.0.1':
-    resolution: {integrity: sha512-vLxFiVixh7WUOv0hOj6alTUOQ4HA2otRWQNMbZidaSKCz+X/38SnnOvRns2p/WCNnApgtvHGExa4zi0p57WETw==}
+  '@fehujs/template-parser@1.0.3':
+    resolution: {integrity: sha512-tOCAghRX3mcUvjAfiKsAh5WqGPuEZViI4kx/UHl9SoM5YMuMnnEvUSb0CviFAXre/nsHwb2ppKqBsDOjp57Afg==}
 
   '@fehujs/tsconfig@1.0.0':
     resolution: {integrity: sha512-7GIKqf6Gslo8xbdXJmhOqHvt3bDnNx1iORkKBsbgy7qygRuoBxTVRarwYEY9ZIlmHlF9MjocVMmuV89BStVXww==}
@@ -330,31 +330,31 @@ snapshots:
   '@esbuild/win32-x64@0.24.2':
     optional: true
 
-  '@fehujs/build@0.2.0':
+  '@fehujs/build@0.2.1':
     dependencies:
       esbuild: 0.24.2
 
-  '@fehujs/helpers@0.1.2':
+  '@fehujs/helpers@0.1.3':
     dependencies:
       '@paralleldrive/cuid2': 2.2.2
 
-  '@fehujs/http-server@0.1.6':
+  '@fehujs/http-server@0.1.9':
     dependencies:
-      '@fehujs/helpers': 0.1.2
-      '@fehujs/ioc': 1.0.6
-      '@fehujs/template-parser': 1.0.1
+      '@fehujs/helpers': 0.1.3
+      '@fehujs/ioc': 1.0.7
+      '@fehujs/template-parser': 1.0.3
       dotenv: 16.4.7
       formidable: 3.5.2
 
-  '@fehujs/ioc@1.0.6':
+  '@fehujs/ioc@1.0.7':
     dependencies:
       reflect-metadata: 0.2.2
 
-  '@fehujs/sessions@0.1.6':
+  '@fehujs/sessions@0.1.7':
     dependencies:
-      '@fehujs/http-server': 0.1.6
+      '@fehujs/http-server': 0.1.9
 
-  '@fehujs/template-parser@1.0.1': {}
+  '@fehujs/template-parser@1.0.3': {}
 
   '@fehujs/tsconfig@1.0.0': {}
 
